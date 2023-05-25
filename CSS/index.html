@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        /* Universal Selector */
+        *{
+            background-color: #5DA3FA;
+        }
+        /* indiviual Selector */
+        p{
+            background-color: #dea074;
+        }
+        /* class and id selector */
+        .warning{
+            background-color: #9a0d0d;
+            color: #b735a8;
+        }
+        #danger{
+            background-color: #c4a5a5;
+            color: #294426;
+        }
+        /* and selector (chained) */
+        li.bg-black.text-white{
+            background-color: #000000;
+            color: #c4a5a5;
+        }
+        /* combined selector */
+        span,li{
+            background-color:#56c949;
+        }
+        /* inside an element */
+        div ul li{
+            background-color: #621ab4;
+        }
+        /* direct child */
+        div > li{
+            background-color: #a459ab;
+        }
+        div > ul >li {
+            background-color: #a9a0a0;
+        }
+        /* sibling child ~ or + */
+        .sibling + p {
+            background-color: #d40c0c89;
+        }
+        /* General sibling combinator */
+        
+
+    </style>
+</head>
+<body>
+    <div>Welcome to live class</div>
+    <span>Span just a span</span>
+    <p>We all know about 9 para SF</p>
+    <ul>
+        <li class="bg-black text-white">iteam 1</li>
+        <li>iteam 2</li>
+        <li>iteam 3</li>
+        <li>iteam 4</li>
+        <li>iteam 5</li>
+    </ul>
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <li>Awesome</li>
+        <ul>
+            <li>Highlight me</li>
+            <li>Highlight you</li>
+        </ul>
+    </div>
+    <section>
+        <p>Test 1</p>
+        <p class="sibling"> Test 2</p>
+        <p>Test 3</p>
+        <p>Test 4</p>
+        <p>Test 5</p>
+    </section>
+</body>
+</html>
