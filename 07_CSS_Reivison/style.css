@@ -1,0 +1,14 @@
+*{
+    color: #f0f8ff;
+    background-color:#1672c3;
+}
+#para{
+    border: 2px double #c93c27;
+    padding: 100px;
+    margin: 50px 20px;
+    height: 600px;
+    width: 160px;
+    background-color: #9acd32;
+    text-align: center;
+    text-decoration-line:underline;
+}
