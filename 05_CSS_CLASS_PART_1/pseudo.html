@@ -20,6 +20,14 @@
             background-color: #ba2828;
         }
         /* after : : part of label */
+        .imp-label:hover::after{
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            background-color: #ba2828;
+        }
     </style>
 </head>
 <body>
@@ -28,10 +36,10 @@
             <label class="imp-label" for="name">name</label>
             <input type="text" name="name">
           
-            <label for="email">email</label>
+            <label class="email" for="email">email</label>
             <input type="email" name="email">
             
-            <button  data-tooltip="Tooltip" type="submit">Submit</button>
+            <button class="btn-primary" data-tooltip="Tooltip" type="submit">Submit</button>
         </form>
     </div>
 </body>

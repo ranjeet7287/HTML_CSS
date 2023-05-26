@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Pseudo Class</title>
+    <style>
+        body{
+            background-color: #524a5e;
+            color: #c4c0c0;
+        }
+        /* Before */
+        .imp-label:hover::before{
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            background-color: #ba2828;
+        }
+        /* after : : part of label */
+        .imp-label:hover::after{
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            background-color: #ba2828;
+        }
+        .email:hover{
+            background-color: #cece5c;
+            padding:5px;
+            color:#000000;
+        }
+        /* .btn-primary{
+            background-color: #8b85a5;
+            color: #000000;
+            padding:5px 20px 5px 20px;
+            border: 1px solid white;
+            border-radius:5px;
+            font-size:15px;
+        }
+        .btn-primary:hover{
+            background-color:#000000;
+            color:  #8b85a5;
+        } */
+        .btn-warning:hover{
+            background-color: #8b85a5;
+            color: #000000;
+            padding:5px 20px 5px 20px;
+            border: 1px solid white;
+            border-radius:5px;
+            font-size:15px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <form  action="">
+            <label class="imp-label" for="name">name</label>
+            <input type="text" name="name">
+          
+            <label class="email" for="email">email</label>
+            <input type="email" name="email">
+            
+            <button class="btn btn-warning" data-tooltip="Tooltip" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
