@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+    .container{
+        background-color: #a29f9a;
+        height: 100vh;
+        width: 100vh;
+        display: grid;
+        /* grid-template-columns: 100px 100px 100px 100px; */
+        /* grid-template-rows: 100px 100px 100px; */
+        /* FR : 1 fraction of entrie  fr()  */
+        grid-template-columns: repeat(4,1fr) ;
+        grid-template-rows: repeat(3,1fr);
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    .iteam{
+        background-color: #ffa304;
+        /* height: 70px;
+        width: 70px; */
+        margin: 7px;
+    }
+    #iteam1{
+        background-color: aqua;
+        grid-row-start: 2;
+        grid-column-start:4;
+        /* like a matrix 1,3 but 1,1 s start hota hai insted of 0,0 */
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="iteam" id="iteam1"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+        <div class="iteam"></div> 
+        <div class="iteam"></div>
+        <div class="iteam"></div>
+    </div>
+</body>
+</html>
+
+<!-- 
+    When grid-column-start is used alone, the grid item by default will span exactly one column. However, you can extend the item across multiple columns by adding the grid-column-end property.
+
+
+    When pairing grid-column-start and grid-column-end, you might assume that the end value has to be greater than the start value. But this turns out not the case!
+
+
+    If you want to count grid lines from the right instead of the left, you can give grid-column-start and grid-column-end negative values. For example, you can set it to -1 to specify the first grid line from the right.
+
+
+    Instead of defining a grid item based on the start and end positions of the grid lines, you can define it based on your desired column width using the span keyword. Keep in mind that span only works with positive values.
+
+
+    
+-->

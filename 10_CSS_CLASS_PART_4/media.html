@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        body{
+            display: flex;  
+        }
+        .box{
+            height:70px;
+            width: 70px;
+            border: 2px solid #000000;
+            margin: 10px;
+            text-align: center;
+        }
+
+        @media (max-width:500px){
+            body{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        @media (min-width:501px) and (max-width:766px){
+            *{
+                background-color: #d39c59cf;
+            }
+        }
+        @media (min-width:799px){
+            *{
+                background-color: #67655fa6;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">One</div>
+    <div class="box">Two</div>
+    <div class="box">Three</div>
+    <div class="box">Four</div>
+</body>
+</html>
+
+
+
+<!-- 
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/
+Kindle), landscape 800x480 phones (Android) */ }
+
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+-->
