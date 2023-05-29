@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .container{
+            border: 2px solid;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .items{
+            height: 100px;
+            width: 100px;
+            border: 2px solid rgb(199, 46, 16);
+            text-align: center;
+
+        }
+        #one{
+            /* flex: 1; by deafult it's flex grow */
+            /* flex-grow: 1; by deafult value is 0 */
+            /* flex-shrink: 2; by deafult value is 1 */
+        }
+        #two{
+            /* flex: 1; */
+            /* flex-grow:1; */
+        }
+        #three{
+            /* flex:1; */
+            /* flex-grow: 1; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="one">one</div>
+        <div class="items" id="two">two</div>
+        <div class="items" id="three">three</div>
+    </div>
+</body>
+</html>
