@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1440px;
+    margin: auto;
+    overflow: hidden;
+}
+
+nav{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+    list-style-type: none;
+    font-size: 20px;
+    margin-right: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+nav ul li:first-child{
+    color: #008000;
+}
+
+/* Main Section */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
+main section {
+    width: 50%;
+}
+.background-sethiscpe{
+    opacity: 0.1;
+}
+.leftmain { 
+    margin-left: 5%;
+    position: relative;
+}
+
+.leftmain h1{
+    font-size: 70px;
+}
+.leftmain p{
+    color: #969696;
+    font-size: 20px;
+    margin: 20px 0px;
+}
+.top-angle{
+    margin-bottom: 50px;
+}
+.bottom-angle{
+    position: absolute;
+    right: 55px;
+    margin-top: 45px;
+}
+.btn{
+    padding: 15px 15px;
+    background-color: #94e2e2;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.Doctorji{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 80%;
+}
+@media (max-width:1150px){
+    .leftmain h1{
+        font-size: 50px;
+    }
+
+}
+@media (max-width:1000px){
+    .leftmain h1{
+        font-size: 30px;
+    }
+    .Doctorji{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 70%;
+        width: 40%;
+    }
+}
